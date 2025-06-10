@@ -1,83 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prestations | Massages Bien-Être</title>
+  <title>Prestations | Glow Body</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
   <header>
-
-    <h1>Massages Bien-Être</h1>
-
+    <a href="index.html"><img src="images/logo.PNG" alt="Ritual Body" class="logo"></a>
     <nav>
-
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="prestations.html">Prestations</a></li>
-            <li><a href="apropos.html">À propos</a></li>
-            <li><a href="rendezvous.html">Prendre rendez-vous</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="prestations.html">Prestations</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="rendezvous.html">Rendez-vous</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
+    <h2 class="section-title">Prestations & Tarifs</h2>
 
-    <h2>Nos prestations</h2>
+    <!-- DRAINAGE LYMPHATIQUE -->
+    <section class="categorie">
+      <h3>Drainage lymphatique</h3>
+      <p class="description">Massage doux stimulant la circulation de la lymphe pour détoxifier le corps, réduire les gonflements et renforcer le système immunitaire.</p>
 
-    <section class="prestations">
+      <ul class="prestation-list">
+        <li><strong>Drainage corps</strong> — 70€ / 45 min</li>
+        <li><strong>Drainage visage</strong> — 50€ / 30 min</li>
+        <li><strong>Post-opératoire</strong> — 70€ / 45 min</li>
+        <li><strong>Par 2 zones</strong> — 60€ / 35 min</li>
+        <li><strong>10 séances + 1 offerte</strong> — 750€</li>
+      </ul>
+    </section>
 
-      <article class="prestation">
+    <!-- MADEROTHÉRAPIE -->
+    <section class="categorie">
+      <h3>Maderothérapie</h3>
+      <p class="description">Technique colombienne utilisant des outils en bois pour stimuler la circulation, tonifier et raffermir le corps tout en réduisant la cellulite.</p>
 
-            <h3>Massage relaxant</h3>
-            <p>Un massage doux pour relâcher les tensions et apaiser le mental.</p>
-            <p><strong>Durée :</strong> 60 min<br><strong>Tarif :</strong> 60€</p>
-      
-        </article>
+      <ul class="prestation-list">
+        <li><strong>Corps entier</strong> — 70€ / 45 min</li>
+        <li><strong>Par zone ½</strong> — 60€ / 35 min</li>
+        <li><strong>Visage</strong> — 50€ / 30 min</li>
+        <li><strong>5 séances + 1 offerte</strong> — 300€</li>
+      </ul>
+    </section>
 
-        <article class="prestation">
-       
-            <h3>Massage sportif</h3>
-            <p>Idéal avant ou après un effort physique pour détendre les muscles profonds.</p>
-            <p><strong>Durée :</strong> 45 min<br><strong>Tarif :</strong> 50€</p>
-      
-        </article>
+    <!-- LIPOCAVITATION & RADIOFRÉQUENCE -->
+    <section class="categorie">
+      <h3>Lipocavitation & Radiofréquence</h3>
+      <p class="description">Technique non invasive combinant ultrasons et ondes chauffantes pour réduire les graisses localisées et raffermir la peau.</p>
 
-        <article class="prestation">
-           
-            <h3>Réflexologie plantaire</h3>
-            <p>Stimulation des zones réflexes du pied pour un rééquilibrage global.</p>
-            <p><strong>Durée :</strong> 30 min<br><strong>Tarif :</strong> 40€</p>
-       
-        </article>
+      <ul class="prestation-list">
+        <li><strong>Ventre / Taille</strong> — 60€ / 45 min</li>
+        <li><strong>Bras</strong> — 40€ / 30 min</li>
+        <li><strong>Dos</strong> — 60€ / 30 min</li>
+        <li><strong>Cuisses / Fessiers</strong> — 80€ / 45 min</li>
+        <li><strong>5 séances + 1 offerte</strong> — 400€</li>
+      </ul>
+    </section>
 
-        <article class="prestation">
-       
-            <h3>Massage aux pierres chaudes</h3>
-            <p>Chaleur douce et profonde pour un lâcher-prise total.</p>
-            <p><strong>Durée :</strong> 75 min<br><strong>Tarif :</strong> 70€</p>
-     
-        </article>
+    <!-- PRESTATIONS COMBINÉES -->
+    <section class="categorie">
+      <h3>Prestations combinées</h3>
+      <p class="description">Formules combinées pour un traitement complet et plus efficace.</p>
 
+      <ul class="prestation-list">
+        <li><strong>Drainage + Madero</strong> Corps — 80€ / Visage — 60€ / Par 2 zones — 70€</li>
+        <li><strong>Forfait 5 + 1</strong> — 400€</li>
+        <li><strong>Madero + Lipo</strong> Corps — 100€ / Zones — 80€ / Visage — 70€</li>
+        <li><strong>Forfait 5 + 1</strong> — 500€</li>
+        <li><strong>Full Presta Glow Body</strong> — 120€ / zone — 100€ / Forfait — 600€</li>
+      </ul>
     </section>
 
     <div class="center">
-
       <a href="rendezvous.html" class="btn">Prendre rendez-vous</a>
-    
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Massages Bien-Être. Tous droits réservés.</p>
+    <p>&copy; 2025 Ritual Body – Tous droits réservés</p>
   </footer>
 </body>
 </html>

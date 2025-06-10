@@ -1,80 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prendre rendez-vous | Massages Bien-Être</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prendre rendez-vous | Glow Body</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-
-
 <body>
   <header>
-
-    <h1>Massages Bien-Être</h1>
-
+    <a href="index.html"><img src="images/logo.PNG" alt="Ritual Body" class="logo"></a>
     <nav>
-
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="prestations.html">Prestations</a></li>
-            <li><a href="apropos.html">À propos</a></li>
-            <li><a href="rendezvous.html">Prendre rendez-vous</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="prestations.html">Prestations</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="rendezvous.html">Rendez-vous</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-
   <main>
-
     <section class="rendezvous">
+      <h2 class="section-title">Prendre rendez-vous</h2>
+      <form id="rdv-form" action="#" method="post">
+        <label for="nom">Nom complet :</label>
+        <input type="text" id="nom" name="nom" required />
 
-        <h2>Prendre rendez-vous</h2>
-        
-        <form id="rdv-form" action="#" method="post">
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required />
 
-            <label for="nom">Nom complet :</label>
-            <input type="text" id="nom" name="nom" required>
+        <label for="tel">Téléphone :</label>
+        <input type="tel" id="tel" name="tel" required />
 
-            <label for="email">Adresse email :</label>
-            <input type="email" id="email" name="email" required>
+        <label for="prestation">Choisissez une prestation :</label>
+        <select id="prestation" name="prestation" required>
+          <optgroup label="Drainage lymphatique">
+            <option value="Drainage corps">Drainage corps</option>
+            <option value="Drainage visage">Drainage visage</option>
+            <option value="Drainage post-opératoire">Drainage post-opératoire</option>
+            <option value="Drainage 2 zones">Drainage 2 zones</option>
+            <option value="Forfait 10 séances + 1 offerte">Forfait 10 séances</option>
+          </optgroup>
 
-            <label for="tel">Téléphone :</label>
-            <input type="tel" id="tel" name="tel" required>
+          <optgroup label="Maderothérapie">
+            <option value="Madero corps entier">Corps entier</option>
+            <option value="Madero par zone ½">Par zone ½</option>
+            <option value="Madero visage">Visage</option>
+            <option value="Forfait 5 séances + 1 offerte (Madero)">Forfait Madero</option>
+          </optgroup>
 
-            <label for="prestation">Type de massage :</label>
-            <select id="prestation" name="prestation" required>
+          <optgroup label="Lipocavitation / RF">
+            <option value="Ventre / Taille">Ventre / Taille</option>
+            <option value="Bras">Bras</option>
+            <option value="Dos">Dos</option>
+            <option value="Cuisses / Fessiers">Cuisses / Fessiers</option>
+            <option value="Forfait 5 séances + 1 offerte (Lipo)">Forfait Lipo</option>
+          </optgroup>
 
-            <option value="">-- Choisir une prestation --</option>
-            <option value="relaxant">Massage relaxant</option>
-            <option value="sportif">Massage sportif</option>
-            <option value="reflexologie">Réflexologie plantaire</option>
-            <option value="pierres">Massage aux pierres chaudes</option>
+          <optgroup label="Prestations combinées">
+            <option value="Drainage + Madero">Drainage + Madero</option>
+            <option value="Madero + Lipo">Madero + Lipo</option>
+            <option value="Full Presta Glow Body">Glow Body – Full Prestation</option>
+          </optgroup>
+        </select>
 
-            </select>
+        <label for="date">Date souhaitée :</label>
+        <input type="date" id="date" name="date" required />
 
-            <label for="date">Date souhaitée :</label>
-            <input type="date" id="date" name="date" required>
+        <label for="heure">Heure souhaitée :</label>
+        <input type="time" id="heure" name="heure" required />
 
-            <label for="heure">Heure souhaitée :</label>
-            <input type="time" id="heure" name="heure" required>
+        <label for="message">Message (optionnel) :</label>
+        <textarea id="message" name="message" rows="4" placeholder="Précisez toute information utile (post-op, contre-indications, etc.)"></textarea>
 
-            <label for="message">Message (optionnel) :</label>
-            <textarea id="message" name="message" rows="4" placeholder="Besoin particulier, allergies, etc."></textarea>
+        <a href="#" id="openModal" class="modal-link">Lire les contre-indications</a>
 
-            <button type="submit">Envoyer la demande</button>
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </section>
 
-        </form>
-        </section>
-    </main>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h3>⚠️ Contre-indications</h3>
+        <ul>
+          <li>Grossesse / Allaitement</li>
+          <li>Fièvre ou infection</li>
+          <li>Pacemaker ou implants métalliques</li>
+          <li>Cancers non traités</li>
+          <li>Phlébites, varices importantes</li>
+          <li>Affections cutanées sévères</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>En cas de doute, merci de me contacter avant toute réservation.</strong></p>
+      </div>
+    </div>
+    
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Massages Bien-Être. Tous droits réservés.</p>
-    </footer>
-    </body>
-    </html>
+  <footer>
+    <p>&copy; 2025 Ritual Body – Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
