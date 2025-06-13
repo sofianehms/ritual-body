@@ -8,53 +8,75 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <a href="index.html"><img src="images/logo.PNG" alt="Logo Ritual Body" class="logo"></a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li class="dropdown">
-          <a href="prestations.html">Prestations</a>
-          <ul class="dropdown-menu">
-            <li><a href="soindrainage.html">Massage drainant</a></li>
-            <li><a href="soinmadero.html">Maderothérapie</a></li>
-            <li><a href="soinlipo.html">Lipocavitation / RF</a></li>
-            <li><a href="soincombines.html">Prestations combinées</a></li>
-            <li><a href="soinfullpresta.html">Full Presta</a></li>
-          </ul>
-        </li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-        <li><a href="rendezvous.html">Rendez-vous</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <a href="index.html"><img src="images/logo.PNG" alt="Ritual Body" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li class="dropdown">
+            <a href="prestations.html">Prestations</a>
+            <ul class="dropdown-menu">
+              <li><a href="soindrainage.html">Massage drainant</a></li>
+              <li><a href="soinmadero.html">Maderothérapie</a></li>
+              <li><a href="soinlipo.html">Lipocavitation / RF</a></li>
+              <li><a href="soincombines.html">Prestations combinées</a></li>
+              <li><a href="soinfullpresta.html">Full Presta</a></li>
+            </ul>
+          </li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="rendezvous.html">Rendez-vous</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="rendezvous.html" class="btn rdv-header">Prendre RDV</a>
+    </div>
   </header>
 
+  <!-- MAIN -->
   <main>
-    <section class="categorie">
-      <h2>Me contacter</h2>
-      <p class="description">Pour toute demande de rendez-vous, d'information ou de suivi post-séance, je suis disponible ci-dessous.</p>
+    <section class="hero">
+      <h1>Contact</h1>
+      <p>Une question ? Une demande ? Écrivez-nous ou venez nous rencontrer</p>
+    </section>
 
-      <ul class="prestation-list">
-        <li><strong>📍 Adresse :</strong> 123 Rue du Bien-Être, 75000 Paris</li>
-        <li><strong>📞 Téléphone :</strong> 06 12 34 56 78</li>
-        <li><strong>✉️ Email :</strong> contact@ritualbody.fr</li>
-        <li><strong>📱 Instagram :</strong> <a href="https://instagram.com/glowbbody" target="_blank">@glowbbody</a></li>
-      </ul>
+    <section class="bg-block">
+      <h2>Nous écrire</h2>
+      <form id="contact-form">
+        <label for="nom">Nom *</label>
+        <input type="text" id="nom" name="nom" required>
 
-      <h3>Localisation</h3>
-      <div class="map">
-        <!-- Exemple carte Google Maps (à remplacer par l’adresse réelle) -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9998274602486!2d2.294481315674706!3d48.85884407928702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdf731bc39d%3A0xbfd1c67fcef3f5c1!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1618305970333!5m2!1sfr!2sfr"
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+
+    <section class="bg-block">
+      <h2>Nous trouver</h2>
+      <div class="contact-home">
+        <p>📍 12 rue des Soins, 77400 Lagny-sur-Marne</p>
+        <p>📞 <a href="tel:+33612345678">06 12 34 56 78</a></p>
+        <p>✉️ <a href="mailto:contact@ritualbody.fr">contact@ritualbody.fr</a></p>
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=lagny+sur+marne&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Ritual Body – Tous droits réservés</p>
   </footer>
+
+  <script src="js/script.js" defer></script>
 </body>
 </html>

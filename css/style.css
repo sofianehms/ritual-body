@@ -391,3 +391,14 @@ nav ul li:hover ul.dropdown-menu {
 .carrousel-pagination .dot.active {
   background-color: #a5736d;
 }
+
+.carrousel-slide {
+  min-width: 100%;
+  text-align: center;
+}
+
+.carrousel-caption {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #7e4d44;
+}
