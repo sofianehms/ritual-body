@@ -3,46 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Accueil | Glow Body</title>
+  <title>Accueil | Ritual Body</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="images/logo.PNG" alt="Ritual Body" class="logo"></a>
-    <nav>
+    <div class="header-container">
+      <a href="index.html"><img src="images/logo.PNG" alt="Ritual Body" class="logo"></a>
+      <nav>
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="prestations.html">Prestations</a></li>
+          <li class="dropdown">
+            <a href="prestations.html">Prestations</a>
+            <ul class="dropdown-menu">
+              <li><a href="soindrainage.html">Massage drainant</a></li>
+              <li><a href="soinmadero.html">Maderothérapie</a></li>
+              <li><a href="soinlipo.html">Lipocavitation / RF</a></li>
+              <li><a href="soincombines.html">Prestations combinées</a></li>
+              <li><a href="soinfullpresta.html">Full Presta</a></li>
+            </ul>
+          </li>
           <li><a href="galerie.html">Galerie</a></li>
           <li><a href="apropos.html">À propos</a></li>
           <li><a href="rendezvous.html">Rendez-vous</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <a href="rendezvous.html" class="btn rdv-header">Prendre RDV</a>
+    </div>
   </header>
 
   <main>
-    <!-- SECTION ACCUEIL / HERO -->
-    <section class="hero">
-      <h2 class="section-title">Drainage. Remodelage. Résultats visibles.</h2>
+    <!-- HERO SECTION -->
+    <section class="bg-block">
+      <h1>Drainage. Remodelage. Résultats visibles.</h1>
       <p>Spécialiste post-opératoire, remodelage corporel et bien-être esthétique.</p>
-    </section>
-
-    <br>
-
-    <!-- SECTION INTRODUCTION -->
-    <section class="intro">
-      <h3>Bienvenue chez Ritual Body</h3>
-      <p>Ritual Body vous accompagne avec des soins ciblés et personnalisés pour révéler votre silhouette tout en respectant votre corps. Chaque prestation est pensée pour vous offrir un résultat visible, un soulagement immédiat et un moment de détente profonde.</p>
-      <p>Formée aux techniques les plus efficaces : drainage lymphatique brésilien, maderothérapie colombienne, lipocavitation & radiofréquence, post-opératoire…</p>
-    </section>
-
-    <!-- SECTION APPEL À L’ACTION -->
-    <div class="center">
+      <div class="center">
         <a href="prestations.html" class="btn">Découvrir les prestations</a>
+      </div>
+    </section>
+
+    <!-- À PROPOS BREF -->
+    <section class="intro">
+      <h2>Bienvenue chez Ritual Body</h2>
+      <p>Ritual Body vous accompagne avec des soins ciblés et personnalisés pour révéler votre silhouette tout en respectant votre corps.</p>
+      <p>Drainage lymphatique, maderothérapie, lipocavitation, radiofréquence et soins post-opératoires.</p>
+      <div class="center">
+        <a href="apropos.html" class="btn">En savoir plus</a>
+      </div>
+    </section>
+
+    <!-- PRESTATIONS EN VITRINE -->
+    <section class="vitrine">
+      <h2 class="section-title">Nos soins phares</h2>
+      <div class="presta-cards">
+        <div class="card">
+          <h3>Drainage lymphatique</h3>
+          <p>Réduction des gonflements, detox et bien-être immédiat.</p>
+        </div>
+        <div class="card">
+          <h3>Maderothérapie</h3>
+          <p>Stimulation, raffermissement, réduction de la cellulite.</p>
+        </div>
+        <div class="card">
+          <h3>Lipocavitation / RF</h3>
+          <p>Technique non-invasive pour lisser et affiner la silhouette.</p>
+        </div>
+      </div>
+      <div class="center">
+        <a href="prestations.html" class="btn">Voir toutes les prestations</a>
+      </div>
+    </section>
+
+    <!-- GALERIE MINIATURE -->
+    <section class="galerie-mini">
+      <h2 class="section-title">Résultats visibles</h2>
+      <div class="galerie-grid">
+        <img src="images/avap1.PNG" alt="Avant/Après">
+        <img src="images/avaprf1.PNG" alt="Avant/Après">
+        <img src="images/avappo1.PNG" alt="Avant/Après">
+      </div>
+      <div class="center">
+        <a href="galerie.html" class="btn">Voir la galerie</a>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION RENDEZ-VOUS -->
+    <section class="rendezvous-cta">
+      <h2>Prête à prendre soin de vous ?</h2>
+      <div class="center">
         <a href="rendezvous.html" class="btn">Prendre rendez-vous</a>
-    </div>
+      </div>
+    </section>
+
+    <!-- CONTACT RÉSEAUX -->
+    <section class="contact-home">
+      <h2>Me contacter</h2>
+      <p><strong>📍 Adresse :</strong> 123 Rue du Bien-Être, 75000 Paris</p>
+      <p><strong>📞 Téléphone :</strong> 06 12 34 56 78</p>
+      <p><strong>📱 Instagram :</strong> <a href="https://instagram.com/glowbbody" target="_blank">@glowbbody</a></p>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?..." width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="center">
+        <a href="contact.html" class="btn">Plus d'infos</a>
+      </div>
+    </section>
   </main>
 
   <footer>

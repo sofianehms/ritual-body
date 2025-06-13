@@ -3,90 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prestations | Glow Body</title>
+  <title>Prestations | Ritual Body</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="images/logo.PNG" alt="Ritual Body" class="logo"></a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="prestations.html">Prestations</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-        <li><a href="rendezvous.html">Rendez-vous</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <a href="index.html"><img src="images/logo.PNG" alt="Ritual Body" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li class="dropdown">
+            <a href="prestations.html">Prestations</a>
+            <ul class="dropdown-menu">
+              <li><a href="soindrainage.html">Massage drainant</a></li>
+              <li><a href="soinmadero.html">Maderothérapie</a></li>
+              <li><a href="soinlipo.html">Lipocavitation / RF</a></li>
+              <li><a href="soincombines.html">Prestations combinées</a></li>
+              <li><a href="soinfullpresta.html">Full Presta</a></li>
+            </ul>
+          </li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="rendezvous.html">Rendez-vous</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="rendezvous.html" class="btn rdv-header">Prendre RDV</a>
+    </div>
   </header>
 
   <main>
-    <h2 class="section-title">Prestations & Tarifs</h2>
-
-    <!-- DRAINAGE LYMPHATIQUE -->
-    <section class="categorie">
-      <h3>Drainage lymphatique</h3>
-      <p class="description">Massage doux stimulant la circulation de la lymphe pour détoxifier le corps, réduire les gonflements et renforcer le système immunitaire.</p>
-
-      <ul class="prestation-list">
-        <li><strong>Drainage corps</strong> — 70€ / 45 min</li>
-        <li><strong>Drainage visage</strong> — 50€ / 30 min</li>
-        <li><strong>Post-opératoire</strong> — 70€ / 45 min</li>
-        <li><strong>Par 2 zones</strong> — 60€ / 35 min</li>
-        <li><strong>10 séances + 1 offerte</strong> — 750€</li>
-      </ul>
+    <section class="hero">
+      <h1>Nos prestations</h1>
+      <p>Des soins ciblés pour sublimer votre corps</p>
     </section>
 
-    <!-- MADEROTHÉRAPIE -->
-    <section class="categorie">
-      <h3>Maderothérapie</h3>
-      <p class="description">Technique colombienne utilisant des outils en bois pour stimuler la circulation, tonifier et raffermir le corps tout en réduisant la cellulite.</p>
-
-      <ul class="prestation-list">
-        <li><strong>Corps entier</strong> — 70€ / 45 min</li>
-        <li><strong>Par zone ½</strong> — 60€ / 35 min</li>
-        <li><strong>Visage</strong> — 50€ / 30 min</li>
-        <li><strong>5 séances + 1 offerte</strong> — 300€</li>
-      </ul>
+    <section class="bg-block">
+      <h2>Massage drainant</h2>
+      <p>Redonnez légèreté à votre corps : le drainage lymphatique stimule la circulation, 
+        élimine les toxines et affine visiblement la silhouette.</p>
+      <div class="center">
+        <a href="soindrainage.html" class="btn">En savoir plus</a>
+      </div>
     </section>
 
-    <!-- LIPOCAVITATION & RADIOFRÉQUENCE -->
-    <section class="categorie">
-      <h3>Lipocavitation & Radiofréquence</h3>
-      <p class="description">Technique non invasive combinant ultrasons et ondes chauffantes pour réduire les graisses localisées et raffermir la peau.</p>
-
-      <ul class="prestation-list">
-        <li><strong>Ventre / Taille</strong> — 60€ / 45 min</li>
-        <li><strong>Bras</strong> — 40€ / 30 min</li>
-        <li><strong>Dos</strong> — 60€ / 30 min</li>
-        <li><strong>Cuisses / Fessiers</strong> — 80€ / 45 min</li>
-        <li><strong>5 séances + 1 offerte</strong> — 400€</li>
-      </ul>
+    <section class="bg-block">
+      <h2>Maderothérapie</h2>
+      <p>Offrez à votre corps une vraie transformation avec la madérothérapie : un massage puissant et ciblé qui lisse la peau, 
+        réduit visiblement la cellulite et redessine la silhouette.</p>
+      <div class="center">
+        <a href="soinmadero.html" class="btn">En savoir plus</a>
+      </div>
     </section>
 
-    <!-- PRESTATIONS COMBINÉES -->
-    <section class="categorie">
-      <h3>Prestations combinées</h3>
-      <p class="description">Formules combinées pour un traitement complet et plus efficace.</p>
-
-      <ul class="prestation-list">
-        <li><strong>Drainage + Madero</strong> Corps — 80€ / Visage — 60€ / Par 2 zones — 70€</li>
-        <li><strong>Forfait 5 + 1</strong> — 400€</li>
-        <li><strong>Madero + Lipo</strong> Corps — 100€ / Zones — 80€ / Visage — 70€</li>
-        <li><strong>Forfait 5 + 1</strong> — 500€</li>
-        <li><strong>Full Presta Glow Body</strong> — 120€ / zone — 100€ / Forfait — 600€</li>
-      </ul>
+    <section class="bg-block">
+      <h2>Lipocavitation / Radiofréquence</h2>
+      <p>Un soin doux mais puissant, où technologie et bien-être se rencontrent : la lipocavitation et les 
+        radiofréquences lissent, sculptent et réveillent la peau, sans douleur ni effort.</p>
+      <div class="center">
+        <a href="soinlipo.html" class="btn">En savoir plus</a>
+      </div>
     </section>
 
-    <div class="center">
-      <a href="rendezvous.html" class="btn">Prendre rendez-vous</a>
-    </div>
+    <section class="bg-block">
+      <h2>Prestations combinées</h2>
+      <p>Des soins personnalisés combinant plusieurs techniques pour une efficacité 
+        renforcée et des résultats visibles plus rapidement.</p>
+      <div class="center">
+        <a href="soincombines.html" class="btn">En savoir plus</a>
+      </div>
+    </section>
+
+    <section class="bg-block">
+      <h2>Full presta</h2>
+      <p>Des soins personnalisés combinant plusieurs techniques pour une efficacité renforcée et des résultats visibles plus rapidement.</p>
+      <div class="center">
+        <a href="soinfullpresta.html" class="btn">En savoir plus</a>
+      </div>
+    </section>
+
   </main>
 
   <footer>
     <p>&copy; 2025 Ritual Body – Tous droits réservés</p>
   </footer>
+  <script src="js/script.js" defer></script>
+
 </body>
 </html>

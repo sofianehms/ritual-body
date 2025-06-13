@@ -2,41 +2,71 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Galerie Avant / Après | Glow Body</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie Avant / Après | Ritual Body</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="images/logo.PNG" alt="Ritual Body" class="logo"></a>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="prestations.html">Prestations</a></li>
-        <li><a href="galerie.html">Galerie</a></li>
-        <li><a href="apropos.html">À propos</a></li>
-        <li><a href="rendezvous.html">Rendez-vous</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <a href="index.html"><img src="images/logo.PNG" alt="Ritual Body" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li class="dropdown">
+            <a href="prestations.html">Prestations</a>
+            <ul class="dropdown-menu">
+              <li><a href="soindrainage.html">Massage drainant</a></li>
+              <li><a href="soinmadero.html">Maderothérapie</a></li>
+              <li><a href="soinlipo.html">Lipocavitation / RF</a></li>
+              <li><a href="soincombines.html">Prestations combinées</a></li>
+              <li><a href="soinfullpresta.html">Full Presta</a></li>
+            </ul>
+          </li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="rendezvous.html">Rendez-vous</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="rendezvous.html" class="btn rdv-header">Prendre RDV</a>
+    </div>
   </header>
 
   <main>
-    <!-- Carrousel -->
+    <section class="hero">
+      <h1>Galerie Avant / Après</h1>
+      <p>Découvrez les résultats obtenus grâce à nos soins spécialisés</p>
+    </section>
+
     <section class="carrousel-section">
-      <h2 class="section-title">Résultats</h2>
+      <h2 class="section-title">Résultats visibles</h2>
       <div class="carrousel-container">
+        <div class="carrousel-pagination">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        
         <button class="carrousel-btn prev">&#10094;</button>
         <div class="carrousel-track">
-          <img src="images/avap1.PNG" alt="Avant / Après " class="carrousel-item">
-          <img src="images/avap2.PNG" alt="Avant / Après " class="carrousel-item">
-          <img src="images/avaprf1.PNG" alt="Avant / Après Lipocavitation Radiofréquence" class="carrousel-item">
-          <img src="images/avaprf2.PNG" alt="Avant / Après Lipocavitation Radiofréquence" class="carrousel-item">
-          <img src="images/avaprf3.PNG" alt="Avant / Après Lipocavitation Radiofréquence" class="carrousel-item">
-          <img src="images/avappo1.PNG" alt="Avant / Après Drainage post-op" class="carrousel-item">
-          <img src="images/avappo2.PNG" alt="Avant / Après Drainage post-op" class="carrousel-item">
+          <div class="carrousel-slide">
+
+              <img src="images/avap1.PNG" alt="Avant / Après 1" class="carrousel-item">
+              <img src="images/avap2.PNG" alt="Avant / Après 2" class="carrousel-item">
+              <img src="images/avaprf1.PNG" alt="Avant / Après RF 1" class="carrousel-item">
+              <img src="images/avaprf2.PNG" alt="Avant / Après RF 2" class="carrousel-item">
+              <img src="images/avaprf3.PNG" alt="Avant / Après RF 3" class="carrousel-item">
+              <img src="images/avappo1.PNG" alt="Avant / Après post-op 1" class="carrousel-item">
+              <img src="images/avappo2.PNG" alt="Avant / Après post-op 2" class="carrousel-item">
+        
+            </div>
         </div>
         <button class="carrousel-btn next">&#10095;</button>
       </div>
@@ -47,6 +77,6 @@
     <p>&copy; 2025 Ritual Body – Tous droits réservés</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
